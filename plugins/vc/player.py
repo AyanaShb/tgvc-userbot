@@ -28,20 +28,14 @@ import ffmpeg
 DELETE_DELAY = 8
 
 USERBOT_HELP = f"""{emoji.LABEL}  **Common Commands**:
-__available to group members of current voice chat__
-__starts with / (slash) or ! (exclamation mark)__
 
-/play  reply with an audio to play/queue it, or show playlist
-/current  show current playing time of current track
-/repo  show git repository of the userbot
+`!play`  reply with an audio to play/queue it, or show playlist
+`!current`  show current playing time of current track
 `!help`  show help for commands
-
 
 {emoji.LABEL}  **Admin Commands**:
 
-
-
-`!skip` [n] ...  skip current or n where n >= 2
+`!skip` [n] ...  skip current number
 `!join`  join voice chat of current group
 `!leave`  leave current voice chat
 `!vc`  check which VC is joined
@@ -50,14 +44,13 @@ __starts with / (slash) or ! (exclamation mark)__
 `!clean`  remove unused RAW PCM files
 `!pause` pause playing
 `!resume` resume playing
-`!mute`  mute the VC userbot
-`!unmute`  unmute the VC userbot
+`!mute`  mute the VCG
+`!unmute`  unmute the VCG
+
+special thanks to @anysyz
 """
 
-USERBOT_REPO = f"""{emoji.ROBOT} **Telegram Voice Chat UserBot**
-
-- Repository: [GitHub](https://github.com/callsmusic/tgvc-userbot)
-- License: AGPL-3.0-or-later"""
+USERBOT_REPO = f"""{emoji.ROBOT} **."""
 
 
 # - Pyrogram filters
