@@ -38,7 +38,7 @@ USERBOT_HELP = f"""{emoji.LABEL}  **Common Commands**:
 `!skip` [n] ...  skip current number
 `!join`  join voice chat of current group
 `!leave`  leave current voice chat
-`!vc`  check which VC is joined
+`!vc`  check which VCG is joined
 `!stop`  stop playing
 `!replay`  play from the beginning
 `!clean`  remove unused RAW PCM files
@@ -66,7 +66,7 @@ self_or_contact_filter = filters.create(
     _,
     __,
     message:
-    (message.from_user and message.from_user.is_contact) or message.outgoing
+    message.from_user or message.outgoing
 )
 
 
