@@ -38,8 +38,8 @@ __starts with / (slash) or ! (exclamation mark)__
 
 
 {emoji.LABEL}  **Admin Commands**:
-__available to userbot account itself and its contacts__
-__starts with ! (exclamation mark)__
+
+
 
 `!skip` [n] ...  skip current or n where n >= 2
 `!join`  join voice chat of current group
